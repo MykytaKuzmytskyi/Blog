@@ -7,7 +7,17 @@ from .models import Comment, Post, User
 from mptt.forms import TreeNodeChoiceField
 
 
-from .models import Post
+class UserCreateForm(UserCreationForm):
+    avatar = forms.ImageField(required=False)
+
+    class Meta(UserCreationForm.Meta):
+        model = User
+        fields = UserCreationForm.Meta.fields + (
+            "email",
+            "first_name",
+            "last_name",
+            "avatar",
+        )
 
 
 class PostCreateForm(forms.ModelForm):
