@@ -26,3 +26,48 @@ class PostDeleteView(generic.DeleteView):
     model = Post
     success_url = reverse_lazy("post:post-list")
 
+
+class PostCreateView(generic.CreateView):
+    model = Post
+    form_class = PostCreateForm
+
+    def form_valid(self, form):
+        user = self.request.user
+        new_post = form.save(commit=False)
+        new_post.author_id = user.id
+        new_post.save()
+        return super(PostCreateView, self).form_valid(form)
+
+    def get_success_url(self):
+        return reverse("blog:post-list")
+
+
+class CommentCreateView(FormMixin, generic.DetailView):
+    model = Post
+    form_class = NewCommentForm
+
+    def get_success_url(self):
+        return reverse("blog:post-detail", kwargs={"slug": self.get_object().slug})
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["comments"] = Comment.objects.all()
+        context["comment_form"] = NewCommentForm
+        return context
+
+    def post(self, request, *args, **kwargs):
+        self.object = self.get_object()
+
+        form = self.get_form()
+        if form.is_valid():
+            return self.form_valid(form, kwargs)
+        else:
+            return self.form_invalid(form)
+
+    def form_valid(self, form, slug):
+        user = self.request.user
+        post = Post.objects.get(slug=slug['slug'])
+        new_comment = form.save(commit=False)
+        new_comment.post = post
+        new_comment.save()
+        return super(CommentCreateView, self).form_valid(form)
