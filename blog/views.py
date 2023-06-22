@@ -4,7 +4,15 @@ from django.views import generic
 from django.views.generic.edit import FormMixin
 
 from blog.forms import NewCommentForm, PostCreateForm, UserCreateForm, PostUpdateForm
-from blog.models import Post
+from blog.models import Post, Comment
+
+
+class UserCreationView(generic.CreateView):
+    model = get_user_model()
+    form_class = UserCreateForm
+
+    def get_success_url(self):
+        return reverse("blog:post-list")
 
 
 class PostListView(generic.ListView):
