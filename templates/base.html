@@ -35,12 +35,21 @@
         </a>
       </li>
       {% endif %}
+      {% if user.is_authenticated %}
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'blog:user-update' pk=user.id %}" role="button"
+           aria-haspopup="true" aria-expanded="false">
+          Update user data!
+        </a>
+      </li>
+      {% else %}
       <li class="nav-item active">
         <a class="nav-link" href="{% url 'blog:user-create' %}" role="button"
            aria-haspopup="true" aria-expanded="false">
           Create User!
         </a>
       </li>
+      {% endif %}
       <li class="nav-item active">
         <a class="nav-link" href="{% url 'login' %}">Login</a>
       </li>
