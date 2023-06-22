@@ -7,7 +7,14 @@ Welcome to Blog
 {% block content %}
 <form action="{% url 'blog:post-list' %}" method="get" id="sortProduct">
   <div class="box sort pull-right">
-
+    <span>Order by:</span>
+    <button value="Order" class="dropdown-toggle" type="submit" data-toggle="dropdown" id="menu2">
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu2">
+      <li><input type="submit" name="orderby" value="Username"></li>
+      <li><input type="submit" name="orderby" value="Email"></li>
+      <li><input type="submit" name="orderby" value="Date"></li>
+    </ul>
   </div>
 </form>
 
