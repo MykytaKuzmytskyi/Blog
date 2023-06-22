@@ -13,6 +13,17 @@ class PostListView(generic.ListView):
     queryset = Post.objects.select_related("author")
     paginate_by = 25
 
+    def get_queryset(self):
+        queryset = Post.objects.select_related("author")
+        ordering = self.request.GET.get("orderby")
+        if ordering == "Username":
+            return queryset.order_by(f"author__username")
+        if ordering == "Email":
+            return queryset.order_by(f"author__email")
+        if ordering == "Date":
+            return queryset.order_by(f"-publish")
+        return queryset
+
 
 class PostUpdateView(generic.UpdateView):
     model = Post
