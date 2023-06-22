@@ -3,13 +3,21 @@ from django.urls import reverse, reverse_lazy
 from django.views import generic
 from django.views.generic.edit import FormMixin
 
-from blog.forms import NewCommentForm, PostCreateForm, UserCreateForm, PostUpdateForm
+from blog.forms import NewCommentForm, PostCreateForm, UserCreateForm, PostUpdateForm, UserUpdateForm
 from blog.models import Post, Comment
 
 
 class UserCreationView(generic.CreateView):
     model = get_user_model()
     form_class = UserCreateForm
+
+    def get_success_url(self):
+        return reverse("blog:post-list")
+
+
+class UserUpdateView(generic.UpdateView):
+    model = get_user_model()
+    form_class = UserUpdateForm
 
     def get_success_url(self):
         return reverse("blog:post-list")

@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import PostListView, PostUpdateView, PostDeleteView, PostCreateView, UserCreationView, CommentCreateView
+from .views import PostListView, PostUpdateView, PostDeleteView, PostCreateView, UserCreationView, CommentCreateView, \
+    UserUpdateView
 
 app_name = 'blog'
 
@@ -18,5 +19,9 @@ urlpatterns = [
     path("user/create/",
          UserCreationView.as_view(),
          name="user-create"
+         ),
+    path("user/update/<int:pk>/",
+         UserUpdateView.as_view(),
+         name="user-update"
          ),
 ]
