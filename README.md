@@ -47,3 +47,18 @@ Use the following command to load prepared data from fixture to test and debug y
 - You can use following superuser (or create another one by yourself using the admin page):
     - Login: `admin.user`
     - Password: `Us2ddTX7`
+
+### Run with docker
+
+Docker should be installed
+
+```commandline
+docker-compose up --build
+```
+
+### Getting access
+
+- You can use following superuser (or create another one by yourself):
+    - Login: `admin.user`
+    - Password: `Us2ddTX7`
+- get access token via /api/token/
