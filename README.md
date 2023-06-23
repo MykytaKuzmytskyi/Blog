@@ -58,7 +58,4 @@ docker-compose up --build
 
 ### Getting access
 
-- You can use following superuser (or create another one by yourself):
-    - Login: `admin.user`
-    - Password: `Us2ddTX7`
 - get access token via /api/token/
