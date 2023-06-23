@@ -1,0 +1,670 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2023-06-22T22:56:31.311Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "RRRR",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2023-06-22T22:56:31.320Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "DDD",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2023-06-22T22:56:31.328Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "AAAA",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2023-06-22T22:57:08.758Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "8",
+      "object_repr": "The standard Lorem Ipsum passage, used since the 1500s",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2023-06-22T22:57:22.662Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "9",
+      "object_repr": "Section 1.10.32 of \"de Finibus Bonorum et Malorum\", written by Cicero in 45 BC",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2023-06-22T22:57:35.060Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "10",
+      "object_repr": "1914 translation by H. Rackham",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2023-06-22T22:58:47.887Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "Pypsum",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2023-06-22T22:59:07.333Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "12",
+      "object_repr": "Getting Pypsum",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 4,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 5,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 5,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 5,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 5,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 6,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 6,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 6,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 6,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add post",
+      "content_type": 7,
+      "codename": "add_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change post",
+      "content_type": 7,
+      "codename": "change_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete post",
+      "content_type": 7,
+      "codename": "delete_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view post",
+      "content_type": 7,
+      "codename": "view_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add comment",
+      "content_type": 8,
+      "codename": "add_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change comment",
+      "content_type": 8,
+      "codename": "change_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete comment",
+      "content_type": 8,
+      "codename": "delete_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view comment",
+      "content_type": 8,
+      "codename": "view_comment"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "blog",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "blog",
+      "model": "post"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "blog",
+      "model": "comment"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "221kar10cheac1c3jsx7wikmop4a22pp",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAURP-FtSE8hAsu3fsN5F4eUjWQlHZl_HfbpAtdzpwz82YB16WGdeQ5TIldmGan344wPnPbQXpgu3cee1vmifiu8IMOfuspv66H-3dQcdRtfZYI2kMUQM5bp0FRQgumKIxEwmuZrdliSTYbIUD6kjQZK0lJ77CwzxfOlzeB:1qCTUj:eDcqsws8vrKX0VwTDBx8zLaFgYfd1EyW2CD2vOaBPOA",
+      "expire_date": "2023-07-06T23:13:41.459Z"
+    }
+  },
+  {
+    "model": "blog.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$KnIdkvxGMel8YGQSph9vB4$4N6rEfm5Evq/v+fLkxBX/pDwmvNBImUpFBWDRg9Iej8=",
+      "last_login": "2023-06-22T22:48:07.672Z",
+      "is_superuser": false,
+      "username": "admin",
+      "first_name": "Mykyta",
+      "last_name": "admin",
+      "email": "admin.user@cinema.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-06-22T15:29:08.723Z",
+      "avatar": "89a647098df263546882ab7c163c54a7.jpg",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "blog.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$UZ4x19uIBhDKp7BWEgdVdj$WJcxjFZJsR16G6aHugm7DP5k+rqCMqH40HleIA403Kc=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "admin.user",
+      "first_name": "Mykyta",
+      "last_name": "Kuzmytskyi",
+      "email": "admin.user@admin.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-06-22T22:52:52.654Z",
+      "avatar": "",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "blog.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$JPKeHTB4000vPcxM9W77xS$yEmMXSPAasjYGCcG7tS7M2JiKX1XjycmXd5gHGR/Eps=",
+      "last_login": "2023-06-22T22:56:17.670Z",
+      "is_superuser": true,
+      "username": "user.admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@admin.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-06-22T22:56:05.086Z",
+      "avatar": "",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 4,
+    "fields": {
+      "title": "My first blog!",
+      "slug": "my-first-blog",
+      "publish": "2023-06-22T22:42:47.506Z",
+      "author": 1,
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 5,
+    "fields": {
+      "title": "Why do we use it?",
+      "slug": "why-do-we-use-it",
+      "publish": "2023-06-22T22:49:50.266Z",
+      "author": 1,
+      "content": "Why do we use it?\r\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 6,
+    "fields": {
+      "title": "Where does it come from?",
+      "slug": "where-does-it-come-from",
+      "publish": "2023-06-22T22:51:23.003Z",
+      "author": 1,
+      "content": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 7,
+    "fields": {
+      "title": "Where can I get some?",
+      "slug": "where-can-i-get-some",
+      "publish": "2023-06-22T22:52:00.121Z",
+      "author": 1,
+      "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 8,
+    "fields": {
+      "title": "The standard Lorem Ipsum passage, used since the 1500s",
+      "slug": "the-standard-lorem-ipsum-passage-used-since-the-1500s",
+      "publish": "2023-06-22T22:57:08.755Z",
+      "author": 3,
+      "content": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\""
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 9,
+    "fields": {
+      "title": "Section 1.10.32 of \"de Finibus Bonorum et Malorum\", written by Cicero in 45 BC",
+      "slug": "section-11032-of-de-finibus-bonorum-et-malorum-written-by-cicero-in-45-bc",
+      "publish": "2023-06-22T22:57:22.658Z",
+      "author": 2,
+      "content": "\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\""
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 10,
+    "fields": {
+      "title": "1914 translation by H. Rackham",
+      "slug": "1914-translation-by-h-rackham",
+      "publish": "2023-06-22T22:57:35.059Z",
+      "author": 1,
+      "content": "\"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?\""
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 11,
+    "fields": {
+      "title": "Pypsum",
+      "slug": "Pypsum",
+      "publish": "2023-06-22T22:58:47.883Z",
+      "author": 3,
+      "content": "What is it?\r\nPypsum is a program written in the Python programming language that interfaces with lipsum.com (courtesy of James Wilson) to generate Lorem Ipsum text, useful for template designing when lots of mock-up text is needed.\r\n\r\nPypsum actually consists of two programs, pypsum.py and pypsum-gtk.py."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 12,
+    "fields": {
+      "title": "Getting Pypsum",
+      "slug": "getting-pypsum",
+      "publish": "2023-06-22T22:59:07.330Z",
+      "author": 1,
+      "content": "Pypsum is available only for Linux, at the moment. On Linux, you will need python (I have 2.5.2, might work with other versions, too) with the following modules: urllib2, xml.sax (for the command line tool), gtk, gtk.glade (for the graphical interface). Most modern Linux distributions (like Ubuntu) have these ready installed.\r\n\r\nYou can get Pypsum from the Downloads tab, or, if you prefer, the Source tab. It's the same anyway, since it's written in Python and doesn't need any compiling."
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 2,
+    "fields": {
+      "post": 12,
+      "name": "Vinnytsia",
+      "parent": null,
+      "email": "admin@admin.com",
+      "content": "AAA",
+      "publish": "2023-06-22T23:09:49.218Z",
+      "lft": 1,
+      "rght": 2,
+      "tree_id": 1,
+      "level": 0
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 3,
+    "fields": {
+      "post": 4,
+      "name": "Vinnytsia",
+      "parent": null,
+      "email": "mytskyi@gmail.com",
+      "content": "dDDDD",
+      "publish": "2023-06-22T23:10:00.634Z",
+      "lft": 1,
+      "rght": 4,
+      "tree_id": 2,
+      "level": 0
+    }
+  },
+  {
+    "model": "blog.comment",
+    "pk": 4,
+    "fields": {
+      "post": 4,
+      "name": "Engineer",
+      "parent": 3,
+      "email": "admin@admin.com",
+      "content": "My comment!",
+      "publish": "2023-06-22T23:10:29.439Z",
+      "lft": 2,
+      "rght": 3,
+      "tree_id": 2,
+      "level": 1
+    }
+  }
+]

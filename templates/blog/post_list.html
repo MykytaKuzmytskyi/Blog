@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load mptt_tags %}
+{% block title %}
+Welcome to Blog
+{% endblock %}
+
+{% block content %}
+<form action="{% url 'blog:post-list' %}" method="get" id="sortProduct">
+  <div class="box sort pull-right">
+    <span>Order by:</span>
+    <button value="Order" class="dropdown-toggle" type="submit" data-toggle="dropdown" id="menu2">
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu2">
+      <li><input type="submit" name="orderby" value="Username"></li>
+      <li><input type="submit" name="orderby" value="Email"></li>
+      <li><input type="submit" name="orderby" value="Date"></li>
+    </ul>
+  </div>
+</form>
+
+{% if post_list %}
+{% for post in post_list %}
+
+<section>
+  <div class="container my-2 py-2">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-12 col-lg-10 col-xl-8">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex flex-start align-items-center">
+              {% if post.author.avatar %}
+              <img src="{{ post.author.avatar_url }}" alt="avatar" width="60"
+                   height="60"/>
+              {% else %}
+              <img class="rounded-circle shadow-1-strong me-3"
+                   src="https://i.pinimg.com/564x/d9/7b/bb/d97bbb08017ac2309307f0822e63d082.jpg" alt="avatar" width="60"
+                   height="60"/>
+              {% endif %}
+              <div>
+                <h6 class="fw-bold text-primary mb-1 ml-2">{{post.author}}</h6>
+                <p class="text-muted small mb-0 ml-2">
+                  Shared publicly - {{post.publish}}
+                </p>
+              </div>
+            </div>
+
+            <p class=" mb-4 pb-2">
+            <h6>{{ post.title }}</h6>
+            {{post.content}}
+            </p>
+
+            <div class="small d-flex justify-content-start">
+              <a href="{{post.get_absolute_url}}" class="d-flex align-items-center me-3">
+                <i class="far fa-comment-dots me-2 ml-2"></i>
+                <p class="mb-0">Comments ({{ post.comments.count }})</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+
+  {% endif %}
+</section>
+{% endblock %}
